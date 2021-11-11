@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/admin.css">
+    <!-- material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script defer src="/public/renderTable.js"></script>
+    <title>관리자메뉴</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="Header">
+            <div id="logo_container">
+                <a href="/">
+                    <div id="logo"></div>
+                </a>
+            </div>
+            <div class="Header_nav">
+                <div class="MainLogo">
+                    <!-- <a href="javascript:window.location.href=window.location.href"> -->
+                    관리자메뉴
+                    <!-- </a> -->
+                </div>
+                <div class="MainLogo">
+                    <a href="/">
+                        홈
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first__group">
+                <ul>
+                    <li id="dashboard" class="first_tabs first_active">
+                        <a href="javascript:void(0)">
+                            <span>인사조회 시스템</span>
+                        </a>
+                    </li>
+                    <li id="account" class="first_tabs ">
+                        <a href="javascript:void(0)">
+                            <span>인사관리</span>
+                        </a>
+                    </li>
+                    <li id="vm" class="first_tabs">
+                        <a href="javascript:void(0)">
+                            <span>게시판관리</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container__contents">
+                <div id="dashboard_0" class="contents contents_active">
+                    <div id="CellHeader">
+                        <h1 id="CellTitle">인사조회 페이지</h1>
+                        <div class="search_form" style="font-size: 15px;">
+                            검색
+                            <input type="text" id="userlistSearch" onkeyup="userlistSearch()" placeholder="이름/군번 검색"
+                                title="Type in a name">
+                        </div>
+                    </div>
+                    <div id="Cell">
+                        <table id="userlistCell">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
