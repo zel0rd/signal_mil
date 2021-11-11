@@ -1,0 +1,124 @@
+#login_container {
+    height: 843px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#logo {
+    width: 227px;
+    height: 53px;
+    background: url("/public/logo_login.png");
+    background-size: cover;
+
+    margin: 189px auto 0 auto;
+}
+
+#login_form {
+    width: 480px;
+    height: 360px;
+    margin-top: 63px;
+    
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    filter: drop-shadow(2px 2px 4px rgba(120, 120, 120, 0.15));
+    border-radius: 10px;
+
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21.72px;
+    color:#535353;
+}
+
+#id_form {
+    margin-top: 44px;
+    margin-left: 40px;
+    width: 400px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21.72px;
+}
+
+#pw_form {
+    margin-top: 13px;
+    margin-left: 40px;
+    width: 400px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21.72px;
+}
+
+#login_id{
+    margin-top: 5px;
+    width: 400px;
+    height: 54px;
+
+    border: 1.5px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding-left: 22px;
+}
+
+#login_id::placeholder {
+    color:#D1D1D1;
+    font-size: 15px;
+}
+
+#login_pw::placeholder {
+    color:#D1D1D1;
+    font-size: 15px;
+}
+
+#login_pw{
+    margin-top: 5px;
+    width: 400px;
+    height: 54px;
+
+    border: 1.5px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding-left: 22px;
+}
+
+
+
+#submit_form {
+    margin: 47px auto;
+    color:white;
+    background-color: #E66221;
+    
+    width: 400px;
+    height: 54px;
+    border-radius: 10px;
+
+    font-size: 18px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input:focus { 
+    border: 1px solid #0af; 
+    outline: none; 
+    -moz-box-shadow: 0px 0px 15px rgba(0, 170, 255,.5);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 170, 255,.5);
+    box-shadow: 0px 0px 15px rgba(0, 170, 255,.5); 
+}
