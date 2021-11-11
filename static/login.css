@@ -10,7 +10,7 @@
 #logo {
     width: 227px;
     height: 53px;
-    background: url("/public/logo_login.png");
+    background: url(logo_login.png);
     background-size: cover;
 
     margin: 189px auto 0 auto;

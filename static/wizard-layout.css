@@ -53,7 +53,7 @@ Common CSS
 
 #main {
     position: relative;
-    background: #fff url('/public/bg-main.jpg') no-repeat 0 top;
+    background: #fff url('bg-main.jpg') no-repeat 0 top;
     background-size: cover;
 }
 
@@ -1399,7 +1399,7 @@ div.favoriteWrap a.favoriteClose {
 }
 
 .btn-top {
-    background-image: url('/public/ic-top.png');
+    background-image: url('ic-top.png');
     background-color: rgba(23, 129, 209, .8);
 }
 
@@ -1455,7 +1455,7 @@ div.favoriteWrap a.favoriteClose {
 #_globalNavi #_globalUl li._print ._printPage {
   float: left;
   border: 0;
-  background-image: url("/public/icon-zoom.png");
+  background-image: url('icon-zoom.png');
   background-repeat: no-repeat;
   width: 28px;
   height: 28px;

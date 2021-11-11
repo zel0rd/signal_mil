@@ -1,72 +1,81 @@
 /* ==========================================================================
-popzone Banner CSS
+movie Banner CSS
 ========================================================================== */
 
-.popzone {
+.movie {
 	text-align: center;
 }
 
-.popzone>.container {
+.movie>.container {
 	position: relative;
 }
 
 
-.popzone .popzone-slide ul {
+.movie .movie-slide ul {
 	display: inline-block;
 	width: 100%;
 }
 
-.popzone .popzone-slide li {
+.movie .movie-slide li {
 	float: left;
 	text-align: center;
-	background-position: left top;
+	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
 }
 
-.popzone .popzone-slide .btns {
+.movie .movie-slide .btns {
 	position: relative;
+	padding: 80px 0 185px 0;
 	font-size: 14px;
-	font-weight: bold;
-	height: 250px;
-	text-indent: -9999px;
 }
 
-.popzone .slick-button {
+.movie .movie-slide .btns .img-title {
+	display: block;
+	font-size: 24px;
+	color:#fff;
+	line-height: 1;
+}
+
+.movie .movie-slide .btns .img-desc {
+	display: block;
+	font-size: 20px;
+	color:#fff;
+}
+
+.movie .slick-button {
 	position: absolute;
-	right: 15px;
+	right: 0px;
 	top: 20px;
 	display: inline-block;
-	z-index: 100;
 }
 
-.popzone .slick-button button {
+.movie .slick-button button {
 	float: left;
 	width: 22px;
 	height: 22px;
 	text-indent: -9999px;
 }
 
-.popzone .slick-button button.play {
+.movie .slick-button button.play {
 	display: none;
-	background: url('/public/slide-play.png') no-repeat center center;
+	background: url('slide-play.png') no-repeat center center;
 }
 
-.popzone .slick-button button.play.on {
+.movie .slick-button button.play.on {
 	display: block;
 }
 
-.popzone .slick-button button.stop {
+.movie .slick-button button.stop {
 	display: none;
 	background: url('../images/slide-stop.png') no-repeat center center;
 }
 
-.popzone .slick-button button.stop.on {
+.movie .slick-button button.stop.on {
 	display: block;
 }
 
-.popzone button.prev,
-.popzone button.next {
+.movie button.prev,
+.movie button.next {
 	position: absolute;
 	top: 100px;
 	width: 70px;
@@ -76,44 +85,39 @@ popzone Banner CSS
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	text-indent: -9999px;
-	z-index: 100;
 }
 
-.popzone button.prev {
-	left: 0;
+.movie button.prev {
+	right: 101%;
 	background-position: left center;
 }
 
-.popzone button.next {
-	right: 0;
+.movie button.next {
+	left: 101%;
 	background-position: right center;
 }
 
-.popzone .slick-dot {
+.movie .slick-dot {
 	overflow: hidden;
 	float: left;
 }
 
-.popzone .slick-dot li {
+.movie .slick-dot li {
 	float: left;
 	margin-right: 3px;
 }
 
-.popzone .slick-dot li a {
+.movie .slick-dot li a {
 	width: 22px;
 	height: 22px;
 	text-indent: -9999px;
 	background: url('../images/slide-dot.png') no-repeat center center;
 }
 
-.popzone .slick-dot li.slick-current a {
+.movie .slick-dot li.slick-current a {
 	background: url('../images/slide-dot-on.png') no-repeat center center;
 }
 
-.ta .popzone>.container {
-	padding: 0px;
-}
-
-.mo .popzone>.container {
-	padding: 0;
+.ta .movie>.container {
+    padding: 0px;
 }

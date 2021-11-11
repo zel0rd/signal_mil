@@ -10,47 +10,6 @@
 
     <title>육군정보통신학교</title>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="resResponsiveViewport" name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,19 +34,14 @@
 
 
 
-    <script src="./public/jquery-1.12.4.min.js"></script>
-    <!-- <script src="./public/jquery-migrate-1.2.1.js.다운로드"></script>
-    <script src="./public/jquery-ui-1.11.0.js.다운로드"></script>
-    <script src="./public/jquery.simplemodal-1.4.4.js.다운로드"></script>
-
-    <script src="./public/jquery.blockUI.js.다운로드"></script> -->
+    <script src="{{ url_for('static',filename='jquery-1.12.4.min.js')}}"></script>
     <script>
         var urlPattern = ".do";
         var defaultTextSiteId = "signal";
     </script>
-    <script src="./public/common.js.다운로드"></script>
+    <script src="{{ url_for('static',filename='common.js')}}"></script>
 
-    <script src="./public/modernizr.min.js.다운로드"></script>
+    <script src="{{ url_for('static',filename='modernizr.min.js')}}"></script>
 
 
 
@@ -95,18 +49,18 @@
 	<script type="text/javascript" src="/sites/iwest/style/js/sly.min.js"></script>
 	 -->
 
-    <script src="./public/jquery.mCustomScrollbar.js.다운로드"></script>
-    <script type="text/javascript" src="./public/jquery.mousewheel.min.js.다운로드"></script>
-    <script src="./public/jquery.jshowoff.js.다운로드"></script>
-    <script src="./public/jquery.bxslider.js.다운로드"></script>
+    <script src="{{ url_for('static',filename='jquery.mCustomScrollbar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='jquery.mousewheel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='jquery.jshowoff.js') }}"></script>
+    <script src="{{ url_for('static',filename='jquery.bxslider.js') }}"></script>
 
 
-    <link rel="stylesheet" href="./public/mCustomScrollbar.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='mCustomScrollbar.css') }}">
 
 
 
     <script src="./public/common.js(1).다운로드"></script>
-    <script src="./public/site_user.js.다운로드"></script>
+    <script src="./public/site_user.js"></script>
 
     <link rel="stylesheet" href="./public/blockUI.css">
 
@@ -183,7 +137,7 @@
 
 
 
-    <link rel="stylesheet" href="./public/fnct.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fnct.css') }} ">
 
 
     <!-- PC + TABLET + MOBILE -->
@@ -402,35 +356,35 @@
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(2).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(2).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(3).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(3).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(4).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(4).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(5).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(5).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(6).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(6).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(7).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(7).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(8).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(8).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(9).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='public/style(9).css')}}">
     <script>
         /* function jf_moveRecentTab(recentBbsSetupSeq, recentBbsArtclSeq) {
             $( "ul[id^='recentBbsArtclObj_" + recentBbsSetupSeq + "']" ).each(function() {
@@ -744,7 +698,7 @@
 
 
 
-    <script src="./public/script.js.다운로드"></script>
+    <script src="./public/script.js"></script>
 
 
 
@@ -782,11 +736,11 @@
 
 
     <!-- Custom -->
-    <link rel="stylesheet" href="./public/wizard-reset.css">
-    <link rel="stylesheet" href="./public/wizard-layout.css">
-    <link rel="stylesheet" href="./public/wizard-main.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-reset.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-layout.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-main.css' ) }}">
     <!-- Slider -->
-    <link rel="stylesheet" href="./public/slick.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='slick.min.css' ) }}">
 
 </head>
 
@@ -898,10 +852,10 @@
                 <h1 id="logo">
                     <a href="#">
                         <div class="pc-img">
-                            <img src="./public/logo.png" alt="Logo">
+                            <img src="{{ url_for('static',filename='logo.png') }}" alt="Logo">
                         </div>
                         <div class="mo-img">
-                            <img src="./public/logo-m.png" alt="Logo">
+                            <img src="{{ url_for('static',filename='logo-m.png') }}" alt="Logo">
                         </div>
                     </a>
                 </h1>
@@ -3341,7 +3295,7 @@
 
 
 
-                        <script src="./public/visitLog.js.다운로드"></script>
+                        <script src="./public/visitLog.js"></script>
                         <script>
                             /*================================================
                             contents screen height getting
@@ -3448,7 +3402,7 @@
                                                 정예정보통신 장병 육성의 요람
                                             </div>
                                             <div class="logo">
-                                                <span> <img src="./public/logo-slogan.png" alt="육군정보통신학교">
+                                                <span> <img src="{{ url_for('static',filename='logo-slogan.png')}}" alt="육군정보통신학교">
                                                 </span>
                                             </div>
                                         </div>
@@ -7907,11 +7861,11 @@
     </div>
 
     <!-- Slider -->
-    <script src="./public/slick.min.js.다운로드"></script>
+    <script src="./public/slick.min.js"></script>
     <!-- Table Scroll -->
-    <script src="./public/niceScroll.min.js.다운로드"></script>
+    <script src="./public/niceScroll.min.js"></script>
     <!-- Custom -->
-    <script src="./public/main.js.다운로드"></script>
+    <script src="./public/main.js"></script>
     <!-- <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
         style="width: 13px; z-index: 99999999; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: block; opacity: 0.2;">
         <div class="nicescroll-cursors"

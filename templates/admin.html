@@ -1,12 +1,12 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/public/admin.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
     <!-- material -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <script defer src="/public/renderTable.js"></script>
+    <script defer src="{{ url_for('static', filename='renderTable.js') }}"></script>
     <title>관리자메뉴</title>
 </head>
 

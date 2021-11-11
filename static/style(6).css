@@ -55,7 +55,7 @@ quick Banner CSS
 
 .quick .slick-button button.play {
     display: none;
-    background: url('/public/slide-play.png') no-repeat center center;
+    background: url('slide-play.png') no-repeat center center;
 }
 
 .quick .slick-button button.play.on {

@@ -90,7 +90,7 @@ fammily Banner CSS
 
 .fammily .playstop button.play {
     display: none;
-    background: url('/public/slide-play.png') no-repeat center center;
+    background: url('slide-play.png') no-repeat center center;
 }
 
 .fammily .playstop button.play.on {
@@ -114,7 +114,7 @@ fammily Banner CSS
     top: -5px;
     width: 28px;
     height: 30px;
-    background-image: url("/public/arrow-family.png");
+    background-image: url("arrow-family.png");
     background-repeat: no-repeat;
     border-radius: 2px;
     text-indent: -9999px;
