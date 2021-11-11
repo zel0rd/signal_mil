@@ -1,0 +1,131 @@
+/* ==========================================================================
+Rolling Banner CSS
+========================================================================== */
+
+.rolling {
+	text-align: center;
+}
+
+.rolling>.container {
+	padding: 25px 0 25px 0;
+	position: relative;
+}
+
+
+.rolling .rolling-slide ul {
+	display: inline-block;
+	width: 100%;
+}
+
+.rolling .rolling-slide li {
+	float: left;
+	text-align: center;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.rolling .rolling-slide .btns {
+	position: relative;
+	padding: 95px 0 0 0;
+	font-size: 16px;
+	color: #fff;
+}
+
+.rolling .slick-button {
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	display: inline-block;
+}
+
+.rolling .slick-button button {
+	float: left;
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+}
+
+.rolling .slick-button button.play {
+	display: none;
+	background: url('/public/slide-play.png') no-repeat center center;
+}
+
+.rolling .slick-button button.play.on {
+	display: block;
+}
+
+.rolling .slick-button button.stop {
+	display: none;
+	background: url('../images/slide-stop.png') no-repeat center center;
+}
+
+.rolling .slick-button button.stop.on {
+	display: block;
+}
+
+.rolling button.prev,
+.rolling button.next {
+	position: absolute;
+	top: 70px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("../images/slide-arrow.png");
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	text-indent: -9999px;
+	z-index: 9999999;
+}
+
+.rolling button.prev {
+	left:0;
+	background-position: left center;
+}
+
+.rolling button.next {
+	right: 0;
+	background-position: right center;
+}
+
+.rolling .slick-dot {
+	overflow: hidden;
+	float: left;
+}
+
+.rolling .slick-dot li {
+	float: left;
+	margin-right: 3px;
+}
+
+.rolling .slick-dot li a {
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	background: url('../images/slide-dot.png') no-repeat center center;
+}
+
+.rolling .slick-dot li.slick-current a {
+	background: url('../images/slide-dot-on.png') no-repeat center center;
+}
+
+.ta .rolling>.container {
+	padding: 50px 0 35px 0;
+}
+
+
+.mo .rolling>.container {
+	padding: 0 20px;
+}
+
+.mo .rolling button.prev,
+.mo .rolling button.next {
+	top: 30px;
+}
+
+
+@media screen and (max-width: 1023px) { 
+	.rolling-slide{
+		padding:0 50px
+		
+	}
+}

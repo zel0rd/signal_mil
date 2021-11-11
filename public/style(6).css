@@ -1,0 +1,130 @@
+/* ==========================================================================
+quick Banner CSS
+========================================================================== */
+
+.quick {
+    text-align: center;
+}
+
+.quick>.container {
+    background: rgba(34, 52, 127, 0.8);
+    position: relative;
+}
+
+
+.quick .quick-slide ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.quick .quick-slide li {
+    float: left;
+    text-align: center;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+}
+
+.quick .quick-slide .btns {
+    position: relative;
+    padding: 114px 10px 22px 10px;
+    font-size: 14px;
+    color: #fff;
+    font-size: 18px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    overflow: hidden;
+    width: 100%;
+    height: 172px;
+}
+
+.quick .slick-button {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: inline-block;
+}
+
+.quick .slick-button button {
+    float: left;
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+}
+
+.quick .slick-button button.play {
+    display: none;
+    background: url('/public/slide-play.png') no-repeat center center;
+}
+
+.quick .slick-button button.play.on {
+    display: block;
+}
+
+.quick .slick-button button.stop {
+    display: none;
+    background: url('../images/slide-stop.png') no-repeat center center;
+}
+
+.quick .slick-button button.stop.on {
+    display: block;
+}
+
+.quick button.prev,
+.quick button.next {
+    position: absolute;
+    top: 100px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("../images/slide-arrow.png");
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    text-indent: -9999px;
+}
+
+.quick button.prev {
+    right: 101%;
+    background-position: left center;
+}
+
+.quick button.next {
+    left: 101%;
+    background-position: right center;
+}
+
+.quick .slick-dot {
+    overflow: hidden;
+    float: left;
+}
+
+.quick .slick-dot li {
+    float: left;
+    margin-right: 3px;
+}
+
+.quick .slick-dot li a {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    background: url('../images/slide-dot.png') no-repeat center center;
+}
+
+.quick .slick-dot li.slick-current a {
+    background: url('../images/slide-dot-on.png') no-repeat center center;
+}
+
+@media all and (max-width:1200px) {
+    .quick .quick-slide .btns {
+        font-size: 15px;
+    }
+}
+
+.ta .quick>.container {
+    padding: 0px;
+}
+
+.ta .quick .quick-slide .btns {
+    font-size: 14px;
+}

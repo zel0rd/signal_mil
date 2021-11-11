@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*multipleDiv*/
+#menu8880_obj316 .objHeading_h2,
+#menu8880_obj317 .objHeading_h2{
+  font-size: 1.2em;
+}
+/*slogan*/
+.mainSlogan {
+  color:#fff;
+}
+.mainSlogan  strong{
+  margin-bottom: 15px;
+}
+.sloganLar{
+	font-size: 34px;
+  margin-bottom: 25px;
+}
+.sloganSmo{
+	font-size: 20px;
+  margin-bottom: 10px;
+}
+.sloganMSmo{
+	font-size: 13px;
+}
+/*상담안내,찾아오시는길*/
+.etcBox.location{
+  background: url("../../images/locationTM.jpg") no-repeat right bottom;  
+}
+.vStrong{
+  font-size: 1.4em !important;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.vText,.vAddr {
+  font-size: 1em !important;
+  line-height: 1.5;
+}

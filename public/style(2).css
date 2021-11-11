@@ -1,0 +1,182 @@
+/* ==========================================================================
+fammily Banner CSS
+========================================================================== */
+
+.fammily {
+    text-align: center;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.fammily>.container {
+    position: relative;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.fammily .subject {
+    font-size: 40px;
+}
+
+.fammily .info {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0 0 0;
+}
+
+.fammily .fammily-slide ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.fammily .fammily-slide li {
+    float: left;
+    text-align: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15px 10px;
+}
+
+.fammily .fammily-slide .btns {
+    position: relative;
+    text-indent: -99999px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+
+.fammily .slick-slider {
+    font-family: 'noto thin';
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fammily .slider-btn-box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    width: 270px;
+    padding: 0 0 0 25px;
+}
+
+.fammily .slick-button-title {
+    display: inline-block;
+    font-size: 24px;
+    color: #35444c;
+    padding: 0 15px 0 0;
+}
+
+.fammily .slick-button {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.fammily .playstop {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+.fammily .playstop button {
+    float: left;
+    width: 28px;
+    height: 30px;
+    text-indent: -9999px;
+}
+
+.fammily .playstop button.play {
+    display: none;
+    background: url('/public/slide-play.png') no-repeat center center;
+}
+
+.fammily .playstop button.play.on {
+    display: block;
+}
+
+.fammily .playstop button.stop {
+    display: none;
+    background: url('../images/slide-stop.png') no-repeat center center;
+}
+
+.fammily .playstop button.stop.on {
+    display: block;
+}
+
+.fammily button.prev,
+.fammily button.next,
+.fammily button.more {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    width: 28px;
+    height: 30px;
+    background-image: url("/public/arrow-family.png");
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    text-indent: -9999px;
+}
+
+.fammily button.prev {
+    background-position: left center;
+}
+
+.fammily button.next {
+    background-position: -27px center;
+}
+
+.fammily button.more {
+    background-position: right center;
+}
+
+.fammily .slick-dot {
+    overflow: hidden;
+    float: left;
+}
+
+.fammily .slick-dot li {
+    float: left;
+    margin-right: 3px;
+}
+
+.fammily .slick-dot li a {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    background: url('../images/slide-dot.png') no-repeat center center;
+}
+
+.fammily .slick-dot li.slick-current a {
+    background: url('../images/slide-dot-on.png') no-repeat center center;
+}
+
+/*Responce*/
+.ta .fammily {
+    padding: 20px 0;
+}
+
+.ta .fammily .fammily-slide li {
+    padding: 0 10px;
+}
+
+.ta .fammily .slick-button-title {
+    padding: 0;
+}
+
+.ta .fammily .slider-btn-box {
+    width: 250px;
+}
+
+.mo .fammily .slider-btn-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.mo .fammily .slick-slider {
+    width: 100%;
+    display: block;
+}

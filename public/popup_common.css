@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.popupArea{
+	font-size: 1em !important;
+	line-height: 1.5 !important;
+	font-family: "Noto Regular";
+	float: left;
+	letter-spacing: -0.06em;
+	position: relative;
+}
+.popupArea strong {
+	font-weight: 600;
+}
+.popupArea em {
+	font-style: normal;
+}
+.popupArea h1,
+.popupArea ul {
+	margin: 0;
+	padding: 0;
+}
+.popupArea li {
+	list-style: none;
+	line-height: 1.5;
+}
+.popupArea a {
+	text-decoration: none;
+}
+
+
+/*****************************
+	user side
+******************************/
+#PZpop{
+	overflow: hidden;
+}
+.PZwindow{
+	position: absolute !important;
+	z-index: 9999999;
+	border: 1px #063c6e solid;
+	background-color: #fff;
+	cursor: move;
+	overflow: hidden;
+	background-color: #fff;
+	-moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+.PZwindow .PZwrap,
+.PZpopup .nomoreOpen,
+.PZwindow .nomoreOpen{
+	clear: both;
+	overflow: hidden;
+}
+
+.nomoreOpen{
+	background-color: #063c6e;
+	color: #fff;
+}
+.nomoreOpen  form{
+	overflow: hidden;
+	margin: 5px 10px 5px 10px;
+	display: block;
+}
+.nomoreOpen  form span{
+	float: left;
+}
+.nomoreOpen form a.PZwindowClose{
+	background:url("../images/PZwindowClose.gif") no-repeat 50% 50%;
+	float: right;
+	width: 12px;
+	height: 12px;
+	margin: 3px 0 0 0;
+	text-indent: -5000px;
+	position: relative;
+	z-index: 1;
+}

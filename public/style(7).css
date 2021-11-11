@@ -1,0 +1,126 @@
+/* ==========================================================================
+v-quick Banner CSS
+========================================================================== */
+
+.v-quick {
+	text-align: center;
+}
+
+.v-quick>.container {
+	background: rgba(255, 255, 255, 0.8);
+	position: relative;
+}
+
+
+.v-quick .v-quick-slide ul {
+	display: inline-block;
+	width: 100%;
+}
+
+.v-quick .v-quick-slide li {
+	width: 100% !important;
+	text-align: center;
+	background-position: 30px center;
+	background-repeat: no-repeat;
+}
+
+.v-quick .v-quick-slide .btns {
+	position: relative;
+	padding: 10px 0 10px 80px;
+	font-size: 18px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	text-align: left;
+	color: #1a318f;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.v-quick .slick-button {
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	display: inline-block;
+}
+
+.v-quick .slick-button button {
+	float: left;
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+}
+
+.v-quick .slick-button button.play {
+	display: none;
+	background: url('/public/slide-play.png') no-repeat center center;
+}
+
+.v-quick .slick-button button.play.on {
+	display: block;
+}
+
+.v-quick .slick-button button.stop {
+	display: none;
+	background: url('../images/slide-stop.png') no-repeat center center;
+}
+
+.v-quick .slick-button button.stop.on {
+	display: block;
+}
+
+.v-quick button.prev,
+.v-quick button.next {
+	position: absolute;
+	top: 100px;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("../images/slide-arrow.png");
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	text-indent: -9999px;
+}
+
+.v-quick button.prev {
+	right: 101%;
+	background-position: left center;
+}
+
+.v-quick button.next {
+	left: 101%;
+	background-position: right center;
+}
+
+.v-quick .slick-dot {
+	overflow: hidden;
+	float: left;
+}
+
+.v-quick .slick-dot li {
+	float: left;
+	margin-right: 3px;
+}
+
+.v-quick .slick-dot li a {
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	background: url('../images/slide-dot.png') no-repeat center center;
+}
+
+.v-quick .slick-dot li.slick-current a {
+	background: url('../images/slide-dot-on.png') no-repeat center center;
+}
+
+.ta .v-quick>.container {
+	padding: 0px;
+}
+
+.ta .v-quick .v-quick-slide .btns {
+	font-size: 15px;
+	padding: 13px 0 13px 60px;
+}
+
+.ta .v-quick .v-quick-slide li {
+	background-position: 15px center;
+}

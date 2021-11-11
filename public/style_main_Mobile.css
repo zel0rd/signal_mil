@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.mainSlogan{
+  padding-top: 1em;
+}
+.mainSlogan  strong{
+	font-size:20px !important;
+}
+.main-banner{
+	width:100% !important;
+}
+.main-banner ul li{
+	height:90px;
+	width:30%;
+	margin:0 !important;
+	padding:65px 0 10px 0;
+	box-sizing: border-box;
+}
+#menu8880_obj134 {
+  padding-top: 16px;
+}
