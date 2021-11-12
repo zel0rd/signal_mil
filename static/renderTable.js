@@ -1,5 +1,9 @@
 const el = tag => document.createElement(tag)
 
+data = JSON.parse(data)
+console.log(data)
+console.log(data[0]['name'])
+
 let userlistBtn = document.querySelectorAll("#account_1")[0]
 let userlistDom = document.querySelectorAll("#account_1")[1]
 let userlistCell = document.querySelector("#userlistCell")
@@ -108,3 +112,4 @@ function userlistSearch() {
         }
     }
 }
+
