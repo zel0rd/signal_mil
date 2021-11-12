@@ -10,47 +10,6 @@
 
     <title>육군정보통신학교</title>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="resResponsiveViewport" name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,19 +34,14 @@
 
 
 
-    <script src="./public/jquery-1.12.4.min.js"></script>
-    <!-- <script src="./public/jquery-migrate-1.2.1.js"></script>
-    <script src="./public/jquery-ui-1.11.0.js"></script>
-    <script src="./public/jquery.simplemodal-1.4.4.js"></script>
-
-    <script src="./public/jquery.blockUI.js"></script> -->
+    <script src="{{ url_for('static',filename='jquery-1.12.4.min.js')}}"></script>
     <script>
         var urlPattern = ".do";
         var defaultTextSiteId = "signal";
     </script>
-    <script src="./public/common.js"></script>
+    <script src="{{ url_for('static',filename='common.js')}}"></script>
 
-    <script src="./public/modernizr.min.js"></script>
+    <script src="{{ url_for('static',filename='modernizr.min.js')}}"></script>
 
 
 
@@ -95,26 +49,23 @@
 	<script type="text/javascript" src="/sites/iwest/style/js/sly.min.js"></script>
 	 -->
 
-    <script src="./public/jquery.mCustomScrollbar.js"></script>
-    <script type="text/javascript" src="./public/jquery.mousewheel.min.js"></script>
-    <script src="./public/jquery.jshowoff.js"></script>
-    <script src="./public/jquery.bxslider.js"></script>
+    <script src="{{ url_for('static',filename='jquery.mCustomScrollbar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='jquery.mousewheel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='jquery.jshowoff.js') }}"></script>
+    <script src="{{ url_for('static',filename='jquery.bxslider.js') }}"></script>
 
 
-    <link rel="stylesheet" href="./public/mCustomScrollbar.css">
-
-
-
-    <script src="./public/common.js(1).다운로드"></script>
-    <script src="./public/site_user.js"></script>
-
-    <link rel="stylesheet" href="./public/blockUI.css">
-
-
-    <link rel="stylesheet" href="./public/content.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='mCustomScrollbar.css') }}">
 
 
 
+    <script src="{{ url_for('static',filename='common.js(1)') }}"></script>
+    <script src="{{ url_for('static',filename='site_user.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='blockUI.css') }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='content.css') }}">
 
 
 
@@ -134,14 +85,17 @@
 
 
 
-    <link rel="stylesheet" href="./public/responsive.css">
+
+
+
+    <!-- <link rel="stylesheet" href="./public/responsive.css"> -->
 
 
     <!-- PC + TABLET + MOBILE -->
     <!-- <link media="only screen and (max-width: 480px)" href="./public/responsiveMobile.css" rel="stylesheet">
     <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/responsiveTablet.css"
         rel="stylesheet"> -->
-    <link media="only screen and (min-width: 861px)" href="./public/responsiveDesktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/responsiveDesktop.css" rel="stylesheet"> -->
 
 
 
@@ -151,14 +105,13 @@
 
 
 
-    <link href="./public/master.css" rel="stylesheet">
+    <!-- <link href="./public/master.css" rel="stylesheet"> -->
 
 
     <!-- PC + TABLET + MOBILE -->
-    <link media="only screen and (max-width: 480px)" href="./public/master_mobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/master_tablet.css"
-        rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/master_desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/master_mobile.css" rel="stylesheet"> -->
+    <!-- <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/master_tablet.css" -->
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/master_desktop.css" rel="stylesheet"> -->
 
 
 
@@ -174,7 +127,7 @@
     <!-- <link media="only screen and (max-width: 480px)" href="./public/site_contents_Mobile.css" rel="stylesheet">
     <link media="only screen and (min-width: 481px) and (max-width: 860px)"
         href="./public/site_contents_Tablet.css" rel="stylesheet"> -->
-    <link media="only screen and (min-width: 861px)" href="./public/site_contents_Desktop.css" rel="stylesheet">
+    <link media="only screen and (min-width: 861px)" href="{{ url_for('static',filename='site_contents_Desktop.css')}}" rel="stylesheet">
 
 
 
@@ -183,14 +136,13 @@
 
 
 
-    <link rel="stylesheet" href="./public/fnct.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fnct.css') }} ">
 
 
     <!-- PC + TABLET + MOBILE -->
-    <link media="only screen and (max-width: 480px)" href="./public/fnctMobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/fnctTablet.css"
-        rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/fnctDesktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/fnctMobile.css" rel="stylesheet"> -->
+    <!-- <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/fnctTablet.css" -->
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/fnctDesktop.css" rel="stylesheet"> -->
 
 
 
@@ -206,7 +158,7 @@
             var isTablet = true;
             var $w7viewPort = $("#resResponsiveViewport");
             width = parseInt(width);
-            console.log(width);
+            // console.log(width);
             if (isMobile && (width < 480)) {/*mobile*/
                 $("._responsiveObj").removeClass("ds");
                 $("._responsiveObj").addClass("ta");
@@ -260,7 +212,7 @@
     <!-- [M/S RESOURCE] -->
 
 
-    <link rel="stylesheet" href="./public/popup_total.css">
+    <!-- <link rel="stylesheet" href="./public/popup_total.css"> -->
     <script>
         $(document).ready(function () {
             $(".PZwindow").parent("._obj").css("overflow", "visible");
@@ -379,7 +331,7 @@
     <!-- [FNCT RESOURCE] -->
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(1).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(1).css')}}">
     <script>
         /* function jf_moveRecentTab(recentBbsSetupSeq, recentBbsArtclSeq) {
             $( "ul[id^='recentBbsArtclObj_" + recentBbsSetupSeq + "']" ).each(function() {
@@ -402,35 +354,35 @@
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(2).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(2).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(3).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(3).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(4).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(4).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(5).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(5).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(6).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(6).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(7).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(7).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(8).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(8).css')}}">
 
 
 
-    <link type="text/css" rel="stylesheet" href="./public/style(9).css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style(9).css')}}">
     <script>
         /* function jf_moveRecentTab(recentBbsSetupSeq, recentBbsArtclSeq) {
             $( "ul[id^='recentBbsArtclObj_" + recentBbsSetupSeq + "']" ).each(function() {
@@ -453,8 +405,8 @@
 
 
 
-    <link rel="stylesheet" href="./public/style(10).css">
-    <link rel="stylesheet" href="./public/common.js(2).다운로드">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style(10).css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='common.js(2)')}}">
     <!-- <link rel="stylesheet" href="./public/_"> -->
     <script>
         $(function () {
@@ -711,7 +663,7 @@
 
 
 
-    <link href="./public/style(11).css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='style(11).css')}}" rel="stylesheet">
 
 
 
@@ -719,7 +671,7 @@
     <!-- <link media="only screen and (max-width: 480px)" href="./public/style_common_Mobile.css" rel="stylesheet">
     <link media="only screen and (min-width: 481px) and (max-width: 860px)"
         href="./public/style_common_Tablet.css" rel="stylesheet"> -->
-    <link media="only screen and (min-width: 861px)" href="./public/style_common_Desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/style_common_Desktop.css" rel="stylesheet"> -->
 
 
 
@@ -732,10 +684,8 @@
 
 
     <!-- PC + TABLET + MOBILE @@-->
-    <link media="only screen and (max-width: 480px)" href="./public/style_main_Mobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)"
-        href="./public/style_main_Tablet.css" rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/style_main_Desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/style_main_Mobile.css" rel="stylesheet">
+    <link media="only screen and (min-width: 861px)" href="./public/style_main_Desktop.css" rel="stylesheet"> -->
 
 
 
@@ -744,11 +694,11 @@
 
 
 
-    <script src="./public/script.js"></script>
+    <!-- <script src="./public/script.js"></script> -->
 
 
 
-    <script src="./public/script.js(1).다운로드"></script>
+    <!-- <script src="./public/script.js(1).다운로드"></script> -->
 
 
 
@@ -782,25 +732,15 @@
 
 
     <!-- Custom -->
-    <link rel="stylesheet" href="./public/wizard-reset.css">
-    <link rel="stylesheet" href="./public/wizard-layout.css">
-    <link rel="stylesheet" href="./public/wizard-main.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-reset.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-layout.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='wizard-main.css' ) }}">
     <!-- Slider -->
-    <link rel="stylesheet" href="./public/slick.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='slick.min.css' ) }}">
 
 </head>
 
 <body class="main _responsiveObj main ds">
-
-    <!-- Login Script After 
-	<style>#hideAll {position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: white;z-index: 10000;}</style>
-	<div style="display: none" id="hideAll"> </div>
-	<script type="text/javascript">
-	  document.getElementById("hideAll").style.display = "block";
-	  $(window).load(function() { setTimeout(function(){document.getElementById("hideAll").style.display = "none";},50);});
-	</script> 
-	-->
-
     <!-- Skip -->
     <div class="_hidden">
         <a href="#" class="skip skip-gnb">메뉴 바로가기</a>
@@ -898,15 +838,16 @@
                 <h1 id="logo">
                     <a href="#">
                         <div class="pc-img">
-                            <img src="./public/logo.png" alt="Logo">
+                            <img src="{{ url_for('static',filename='logo.png') }}" alt="Logo">
                         </div>
                         <div class="mo-img">
-                            <img src="./public/logo-m.png" alt="Logo">
+                            <img src="{{ url_for('static',filename='logo-m.png') }}" alt="Logo">
                         </div>
                     </a>
                 </h1>
                 <div id="gnb">
 
+<nav id="menuUItop" class="menuUItop ">
 
 
 
@@ -919,14 +860,16 @@
 
 
 
+    <div class="top_div div_1">
+        <ul class="top_k2wiz_GNB _wizOdr ul_1">
 
 
 
+            <li class="li_1_1543 li_1 _1st _even eQ01 _useChildDiv">
 
 
 
 
-                    <nav id="menuUItop" class="menuUItop ">
 
 
 
@@ -939,12 +882,9 @@
 
 
 
-                        <div class="top_div div_1">
-                            <ul class="top_k2wiz_GNB _wizOdr ul_1">
 
 
 
-                                <li class="li_1_1543 li_1 _1st _even eQ01 _useChildDiv">
 
 
 
@@ -954,7 +894,11 @@
 
 
 
+                <a href="#" id="top_k2wiz_GNB_1543" class="top_k2wiz_GNB_1543 a_1 k2wiz_GNB_818" target="_self"><span>
 
+                        학교소개
+                        <input type="hidden" id="menuTitle_1543" value="학교소개">
+                    </span></a>
 
 
 
@@ -973,15 +917,12 @@
 
 
 
-                                    <a href="#"
-                                        id="top_k2wiz_GNB_1543" class="top_k2wiz_GNB_1543 a_1 k2wiz_GNB_818"
-                                        target="_self"><span>
 
-                                            학교소개
-                                            <input type="hidden" id="menuTitle_1543" value="학교소개">
-                                        </span></a>
+                <div class="top_div_1543 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1543 _wizOdr ul_2" style="height: 230px;">
 
 
+                        <li class="li_2_1549 li_2 _1st _even">
 
 
 
@@ -999,13 +940,15 @@
 
 
 
-                                    <div class="top_div_1543 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1543 _wizOdr ul_2" style="height: 230px;">
 
 
-                                            <li class="li_2_1549 li_2 _1st _even">
 
+                            <a href="#" id="top_k2wiz_GNB_1549" class="top_k2wiz_GNB_1549 a_2 k2wiz_GNB_1543"
+                                target="_self"><span>
 
+                                    학교장 인사말
+                                    <input type="hidden" id="menuTitle_1549" value="학교장 인사말">
+                                </span></a>
 
 
 
@@ -1023,14 +966,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1550 li_2 _odd _2nd _useChildDiv">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1549"
-                                                    class="top_k2wiz_GNB_1549 a_2 k2wiz_GNB_1543" target="_self"><span>
 
-                                                        학교장 인사말
-                                                        <input type="hidden" id="menuTitle_1549" value="학교장 인사말">
-                                                    </span></a>
 
 
 
@@ -1048,8 +987,6 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1550 li_2 _odd _2nd _useChildDiv">
 
 
 
@@ -1058,7 +995,12 @@
 
 
 
+                            <a href="#" id="top_k2wiz_GNB_1550" class="top_k2wiz_GNB_1550 a_2 k2wiz_GNB_1543 plus"
+                                target="_self"><span>
 
+                                    학교 이모저모
+                                    <input type="hidden" id="menuTitle_1550" value="학교 이모저모">
+                                </span></a>
 
 
 
@@ -1077,16 +1019,12 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1550"
-                                                    class="top_k2wiz_GNB_1550 a_2 k2wiz_GNB_1543 plus"
-                                                    target="_self"><span>
 
-                                                        학교 이모저모
-                                                        <input type="hidden" id="menuTitle_1550" value="학교 이모저모">
-                                                    </span></a>
+                            <div class="top_div_1550 div_3 _childDiv">
+                                <ul class="top_k2wiz_GNB_ul_1550 _wizOdr ul_3">
 
 
+                                    <li class="li_3_1570 li_3 _1st _even">
 
 
 
@@ -1104,13 +1042,15 @@
 
 
 
-                                                <div class="top_div_1550 div_3 _childDiv">
-                                                    <ul class="top_k2wiz_GNB_ul_1550 _wizOdr ul_3">
 
 
-                                                        <li class="li_3_1570 li_3 _1st _even">
 
+                                        <a href="#" id="top_k2wiz_GNB_1570"
+                                            class="top_k2wiz_GNB_1570 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            동영상
+                                            <input type="hidden" id="menuTitle_1570" value="동영상">
+                                        </a>
 
 
 
@@ -1128,15 +1068,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1571 li_3 _odd _2nd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1570"
-                                                                class="top_k2wiz_GNB_1570 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                동영상
-                                                                <input type="hidden" id="menuTitle_1570" value="동영상">
-                                                            </a>
 
 
 
@@ -1154,9 +1089,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1571 li_3 _odd _2nd">
+                                        <a href="#" id="top_k2wiz_GNB_1571"
+                                            class="top_k2wiz_GNB_1571 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            임무 및 기능
+                                            <input type="hidden" id="menuTitle_1571" value="임무 및 기능">
+                                        </a>
 
 
 
@@ -1174,16 +1112,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1572 li_3 _even _3rd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1571"
-                                                                class="top_k2wiz_GNB_1571 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                임무 및 기능
-                                                                <input type="hidden" id="menuTitle_1571"
-                                                                    value="임무 및 기능">
-                                                            </a>
 
 
 
@@ -1201,9 +1133,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1572 li_3 _even _3rd">
+                                        <a href="#" id="top_k2wiz_GNB_1572"
+                                            class="top_k2wiz_GNB_1572 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            연혁
+                                            <input type="hidden" id="menuTitle_1572" value="연혁">
+                                        </a>
 
 
 
@@ -1221,15 +1156,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1573 li_3 _odd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1572"
-                                                                class="top_k2wiz_GNB_1572 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                연혁
-                                                                <input type="hidden" id="menuTitle_1572" value="연혁">
-                                                            </a>
 
 
 
@@ -1247,9 +1177,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1573 li_3 _odd">
+                                        <a href="#" id="top_k2wiz_GNB_1573"
+                                            class="top_k2wiz_GNB_1573 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            학교마크
+                                            <input type="hidden" id="menuTitle_1573" value="학교마크">
+                                        </a>
 
 
 
@@ -1267,15 +1200,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1574 li_3 _even">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1573"
-                                                                class="top_k2wiz_GNB_1573 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                학교마크
-                                                                <input type="hidden" id="menuTitle_1573" value="학교마크">
-                                                            </a>
 
 
 
@@ -1293,9 +1221,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1574 li_3 _even">
+                                        <a href="#" id="top_k2wiz_GNB_1574"
+                                            class="top_k2wiz_GNB_1574 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            마스코트
+                                            <input type="hidden" id="menuTitle_1574" value="마스코트">
+                                        </a>
 
 
 
@@ -1313,15 +1244,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1575 li_3 _odd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1574"
-                                                                class="top_k2wiz_GNB_1574 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                마스코트
-                                                                <input type="hidden" id="menuTitle_1574" value="마스코트">
-                                                            </a>
 
 
 
@@ -1339,9 +1265,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1575 li_3 _odd">
+                                        <a href="#" id="top_k2wiz_GNB_1575"
+                                            class="top_k2wiz_GNB_1575 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            교가
+                                            <input type="hidden" id="menuTitle_1575" value="교가">
+                                        </a>
 
 
 
@@ -1359,15 +1288,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_4233 li_3 _last _even">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1575"
-                                                                class="top_k2wiz_GNB_1575 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                교가
-                                                                <input type="hidden" id="menuTitle_1575" value="교가">
-                                                            </a>
 
 
 
@@ -1385,9 +1309,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_4233 li_3 _last _even">
+                                        <a href="#" id="top_k2wiz_GNB_4233"
+                                            class="top_k2wiz_GNB_4233 a_3 k2wiz_GNB_1550" target="_self">
 
+                                            New node
+                                            <input type="hidden" id="menuTitle_4233" value="New node">
+                                        </a>
 
 
 
@@ -1406,16 +1333,13 @@
 
 
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_4233"
-                                                                class="top_k2wiz_GNB_4233 a_3 k2wiz_GNB_1550"
-                                                                target="_self">
 
-                                                                New node
-                                                                <input type="hidden" id="menuTitle_4233"
-                                                                    value="New node">
-                                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </li>
+                        <li class="li_2_1551 li_2 _last _even _3rd _useChildDiv">
 
 
 
@@ -1434,12 +1358,7 @@
 
 
 
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </li>
-                                            <li class="li_2_1551 li_2 _last _even _3rd _useChildDiv">
 
 
 
@@ -1447,7 +1366,12 @@
 
 
 
+                            <a href="#" id="top_k2wiz_GNB_1551" class="top_k2wiz_GNB_1551 a_2 k2wiz_GNB_1543 plus"
+                                target="_self"><span>
 
+                                    학교안내
+                                    <input type="hidden" id="menuTitle_1551" value="학교안내">
+                                </span></a>
 
 
 
@@ -1466,16 +1390,12 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1551"
-                                                    class="top_k2wiz_GNB_1551 a_2 k2wiz_GNB_1543 plus"
-                                                    target="_self"><span>
 
-                                                        학교안내
-                                                        <input type="hidden" id="menuTitle_1551" value="학교안내">
-                                                    </span></a>
+                            <div class="top_div_1551 div_3 _childDiv">
+                                <ul class="top_k2wiz_GNB_ul_1551 _wizOdr ul_3">
 
 
+                                    <li class="li_3_1576 li_3 _1st _even">
 
 
 
@@ -1493,13 +1413,15 @@
 
 
 
-                                                <div class="top_div_1551 div_3 _childDiv">
-                                                    <ul class="top_k2wiz_GNB_ul_1551 _wizOdr ul_3">
 
 
-                                                        <li class="li_3_1576 li_3 _1st _even">
 
+                                        <a href="#" id="top_k2wiz_GNB_1576"
+                                            class="top_k2wiz_GNB_1576 a_3 k2wiz_GNB_1551" target="_self">
 
+                                            찾아오시는 길
+                                            <input type="hidden" id="menuTitle_1576" value="찾아오시는 길">
+                                        </a>
 
 
 
@@ -1517,16 +1439,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1577 li_3 _last _odd _2nd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1576"
-                                                                class="top_k2wiz_GNB_1576 a_3 k2wiz_GNB_1551"
-                                                                target="_self">
 
-                                                                찾아오시는 길
-                                                                <input type="hidden" id="menuTitle_1576"
-                                                                    value="찾아오시는 길">
-                                                            </a>
 
 
 
@@ -1544,9 +1460,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1577 li_3 _last _odd _2nd">
+                                        <a href="#" id="top_k2wiz_GNB_1577"
+                                            class="top_k2wiz_GNB_1577 a_3 k2wiz_GNB_1551" target="_self">
 
+                                            학교에 연락하시려면?
+                                            <input type="hidden" id="menuTitle_1577" value="학교에 연락하시려면?">
+                                        </a>
 
 
 
@@ -1565,17 +1484,18 @@
 
 
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1577"
-                                                                class="top_k2wiz_GNB_1577 a_3 k2wiz_GNB_1551"
-                                                                target="_self">
 
-                                                                학교에 연락하시려면?
-                                                                <input type="hidden" id="menuTitle_1577"
-                                                                    value="학교에 연락하시려면?">
-                                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </li>
+                    </ul>
+                    <span class="navGab"></span>
+                </div>
 
+            </li>
+            <li class="li_1_1544 li_1 _odd _2nd eQ02 _useChildDiv">
 
 
 
@@ -1593,17 +1513,8 @@
 
 
 
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </li>
-                                        </ul>
-                                        <span class="navGab"></span>
-                                    </div>
 
-                                </li>
-                                <li class="li_1_1544 li_1 _odd _2nd eQ02 _useChildDiv">
 
 
 
@@ -1611,7 +1522,11 @@
 
 
 
+                <a href="#" id="top_k2wiz_GNB_1544" class="top_k2wiz_GNB_1544 a_1 k2wiz_GNB_818" target="_self"><span>
 
+                        병과소개
+                        <input type="hidden" id="menuTitle_1544" value="병과소개">
+                    </span></a>
 
 
 
@@ -1630,15 +1545,12 @@
 
 
 
-                                    <a href="#"
-                                        id="top_k2wiz_GNB_1544" class="top_k2wiz_GNB_1544 a_1 k2wiz_GNB_818"
-                                        target="_self"><span>
 
-                                            병과소개
-                                            <input type="hidden" id="menuTitle_1544" value="병과소개">
-                                        </span></a>
+                <div class="top_div_1544 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1544 _wizOdr ul_2" style="height: 230px;">
 
 
+                        <li class="li_2_1552 li_2 _1st _even">
 
 
 
@@ -1656,13 +1568,15 @@
 
 
 
-                                    <div class="top_div_1544 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1544 _wizOdr ul_2" style="height: 230px;">
 
 
-                                            <li class="li_2_1552 li_2 _1st _even">
 
+                            <a href="#" id="top_k2wiz_GNB_1552" class="top_k2wiz_GNB_1552 a_2 k2wiz_GNB_1544"
+                                target="_self"><span>
 
+                                    병과휘장
+                                    <input type="hidden" id="menuTitle_1552" value="병과휘장">
+                                </span></a>
 
 
 
@@ -1680,14 +1594,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1553 li_2 _odd _2nd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1552"
-                                                    class="top_k2wiz_GNB_1552 a_2 k2wiz_GNB_1544" target="_self"><span>
 
-                                                        병과휘장
-                                                        <input type="hidden" id="menuTitle_1552" value="병과휘장">
-                                                    </span></a>
 
 
 
@@ -1705,9 +1615,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1553 li_2 _odd _2nd">
+                            <a href="#" id="top_k2wiz_GNB_1553" class="top_k2wiz_GNB_1553 a_2 k2wiz_GNB_1544"
+                                target="_self"><span>
 
+                                    병과역할
+                                    <input type="hidden" id="menuTitle_1553" value="병과역할">
+                                </span></a>
 
 
 
@@ -1725,14 +1638,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1554 li_2 _last _even _3rd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1553"
-                                                    class="top_k2wiz_GNB_1553 a_2 k2wiz_GNB_1544" target="_self"><span>
 
-                                                        병과역할
-                                                        <input type="hidden" id="menuTitle_1553" value="병과역할">
-                                                    </span></a>
 
 
 
@@ -1750,9 +1659,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1554 li_2 _last _even _3rd">
+                            <a href="#" id="top_k2wiz_GNB_1554" class="top_k2wiz_GNB_1554 a_2 k2wiz_GNB_1544"
+                                target="_self"><span>
 
+                                    병과변천사
+                                    <input type="hidden" id="menuTitle_1554" value="병과변천사">
+                                </span></a>
 
 
 
@@ -1771,14 +1683,14 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1554"
-                                                    class="top_k2wiz_GNB_1554 a_2 k2wiz_GNB_1544" target="_self"><span>
 
-                                                        병과변천사
-                                                        <input type="hidden" id="menuTitle_1554" value="병과변천사">
-                                                    </span></a>
+                        </li>
+                    </ul>
+                    <span class="navGab"></span>
+                </div>
 
+            </li>
+            <li class="li_1_1545 li_1 _even _3rd eQ03 _useChildDiv">
 
 
 
@@ -1797,13 +1709,7 @@
 
 
 
-                                            </li>
-                                        </ul>
-                                        <span class="navGab"></span>
-                                    </div>
 
-                                </li>
-                                <li class="li_1_1545 li_1 _even _3rd eQ03 _useChildDiv">
 
 
 
@@ -1811,7 +1717,11 @@
 
 
 
+                <a href="#" id="top_k2wiz_GNB_1545" class="top_k2wiz_GNB_1545 a_1 k2wiz_GNB_818" target="_self"><span>
 
+                        학교소식
+                        <input type="hidden" id="menuTitle_1545" value="학교소식">
+                    </span></a>
 
 
 
@@ -1830,15 +1740,12 @@
 
 
 
-                                    <a href="#"
-                                        id="top_k2wiz_GNB_1545" class="top_k2wiz_GNB_1545 a_1 k2wiz_GNB_818"
-                                        target="_self"><span>
 
-                                            학교소식
-                                            <input type="hidden" id="menuTitle_1545" value="학교소식">
-                                        </span></a>
+                <div class="top_div_1545 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1545 _wizOdr ul_2" style="height: 230px;">
 
 
+                        <li class="li_2_1555 li_2 _1st _even">
 
 
 
@@ -1856,13 +1763,15 @@
 
 
 
-                                    <div class="top_div_1545 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1545 _wizOdr ul_2" style="height: 230px;">
 
 
-                                            <li class="li_2_1555 li_2 _1st _even">
 
+                            <a href="#" id="top_k2wiz_GNB_1555" class="top_k2wiz_GNB_1555 a_2 k2wiz_GNB_1545"
+                                target="_self"><span>
 
+                                    언론보도
+                                    <input type="hidden" id="menuTitle_1555" value="언론보도">
+                                </span></a>
 
 
 
@@ -1880,14 +1789,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1556 li_2 _odd _2nd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1555"
-                                                    class="top_k2wiz_GNB_1555 a_2 k2wiz_GNB_1545" target="_self"><span>
 
-                                                        언론보도
-                                                        <input type="hidden" id="menuTitle_1555" value="언론보도">
-                                                    </span></a>
 
 
 
@@ -1905,9 +1810,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1556 li_2 _odd _2nd">
+                            <a href="#" id="top_k2wiz_GNB_1556" class="top_k2wiz_GNB_1556 a_2 k2wiz_GNB_1545"
+                                target="_self"><span>
 
+                                    포토뉴스
+                                    <input type="hidden" id="menuTitle_1556" value="포토뉴스">
+                                </span></a>
 
 
 
@@ -1925,14 +1833,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1557 li_2 _last _even _3rd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1556"
-                                                    class="top_k2wiz_GNB_1556 a_2 k2wiz_GNB_1545" target="_self"><span>
 
-                                                        포토뉴스
-                                                        <input type="hidden" id="menuTitle_1556" value="포토뉴스">
-                                                    </span></a>
 
 
 
@@ -1950,9 +1854,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1557 li_2 _last _even _3rd">
+                            <a href="#" id="top_k2wiz_GNB_1557" class="top_k2wiz_GNB_1557 a_2 k2wiz_GNB_1545"
+                                target="_self"><span>
 
+                                    일정안내
+                                    <input type="hidden" id="menuTitle_1557" value="일정안내">
+                                </span></a>
 
 
 
@@ -1971,14 +1878,14 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1557"
-                                                    class="top_k2wiz_GNB_1557 a_2 k2wiz_GNB_1545" target="_self"><span>
 
-                                                        일정안내
-                                                        <input type="hidden" id="menuTitle_1557" value="일정안내">
-                                                    </span></a>
+                        </li>
+                    </ul>
+                    <span class="navGab"></span>
+                </div>
 
+            </li>
+            <li class="li_1_1546 li_1 _odd eQ04 _useChildDiv">
 
 
 
@@ -1997,13 +1904,7 @@
 
 
 
-                                            </li>
-                                        </ul>
-                                        <span class="navGab"></span>
-                                    </div>
 
-                                </li>
-                                <li class="li_1_1546 li_1 _odd eQ04 _useChildDiv">
 
 
 
@@ -2011,7 +1912,11 @@
 
 
 
+                <a href="#" id="top_k2wiz_GNB_1546" class="top_k2wiz_GNB_1546 a_1 k2wiz_GNB_818" target="_self"><span>
 
+                        특기병광장
+                        <input type="hidden" id="menuTitle_1546" value="특기병광장">
+                    </span></a>
 
 
 
@@ -2030,15 +1935,12 @@
 
 
 
-                                    <a href="#"
-                                        id="top_k2wiz_GNB_1546" class="top_k2wiz_GNB_1546 a_1 k2wiz_GNB_818"
-                                        target="_self"><span>
 
-                                            특기병광장
-                                            <input type="hidden" id="menuTitle_1546" value="특기병광장">
-                                        </span></a>
+                <div class="top_div_1546 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1546 _wizOdr ul_2" style="height: 230px;">
 
 
+                        <li class="li_2_1558 li_2 _1st _even">
 
 
 
@@ -2056,13 +1958,15 @@
 
 
 
-                                    <div class="top_div_1546 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1546 _wizOdr ul_2" style="height: 230px;">
 
 
-                                            <li class="li_2_1558 li_2 _1st _even">
 
+                            <a href="#" id="top_k2wiz_GNB_1558" class="top_k2wiz_GNB_1558 a_2 k2wiz_GNB_1546"
+                                target="_self"><span>
 
+                                    부모님께 드리는 글
+                                    <input type="hidden" id="menuTitle_1558" value="부모님께 드리는 글">
+                                </span></a>
 
 
 
@@ -2080,14 +1984,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1559 li_2 _odd _2nd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1558"
-                                                    class="top_k2wiz_GNB_1558 a_2 k2wiz_GNB_1546" target="_self"><span>
 
-                                                        부모님께 드리는 글
-                                                        <input type="hidden" id="menuTitle_1558" value="부모님께 드리는 글">
-                                                    </span></a>
 
 
 
@@ -2105,9 +2005,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1559 li_2 _odd _2nd">
+                            <a href="#" id="top_k2wiz_GNB_1559" class="top_k2wiz_GNB_1559 a_2 k2wiz_GNB_1546"
+                                target="_self"><span>
 
+                                    특기병 찾기
+                                    <input type="hidden" id="menuTitle_1559" value="특기병 찾기">
+                                </span></a>
 
 
 
@@ -2125,14 +2028,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1560 li_2 _even _3rd _useChildDiv">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1559"
-                                                    class="top_k2wiz_GNB_1559 a_2 k2wiz_GNB_1546" target="_self"><span>
 
-                                                        특기병 찾기
-                                                        <input type="hidden" id="menuTitle_1559" value="특기병 찾기">
-                                                    </span></a>
 
 
 
@@ -2150,8 +2049,6 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1560 li_2 _even _3rd _useChildDiv">
 
 
 
@@ -2160,7 +2057,12 @@
 
 
 
+                            <a href="#" id="top_k2wiz_GNB_1560" class="top_k2wiz_GNB_1560 a_2 k2wiz_GNB_1546 plus"
+                                target="_self"><span>
 
+                                    특기병 1중대
+                                    <input type="hidden" id="menuTitle_1560" value="특기병 1중대">
+                                </span></a>
 
 
 
@@ -2179,16 +2081,12 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1560"
-                                                    class="top_k2wiz_GNB_1560 a_2 k2wiz_GNB_1546 plus"
-                                                    target="_self"><span>
 
-                                                        특기병 1중대
-                                                        <input type="hidden" id="menuTitle_1560" value="특기병 1중대">
-                                                    </span></a>
+                            <div class="top_div_1560 div_3 _childDiv">
+                                <ul class="top_k2wiz_GNB_ul_1560 _wizOdr ul_3">
 
 
+                                    <li class="li_3_1578 li_3 _1st _even">
 
 
 
@@ -2206,13 +2104,15 @@
 
 
 
-                                                <div class="top_div_1560 div_3 _childDiv">
-                                                    <ul class="top_k2wiz_GNB_ul_1560 _wizOdr ul_3">
 
 
-                                                        <li class="li_3_1578 li_3 _1st _even">
 
+                                        <a href="#" id="top_k2wiz_GNB_1578"
+                                            class="top_k2wiz_GNB_1578 a_3 k2wiz_GNB_1560" target="_self">
 
+                                            보고싶은 얼굴
+                                            <input type="hidden" id="menuTitle_1578" value="보고싶은 얼굴">
+                                        </a>
 
 
 
@@ -2230,16 +2130,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1579 li_3 _odd _2nd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1578"
-                                                                class="top_k2wiz_GNB_1578 a_3 k2wiz_GNB_1560"
-                                                                target="_self">
 
-                                                                보고싶은 얼굴
-                                                                <input type="hidden" id="menuTitle_1578"
-                                                                    value="보고싶은 얼굴">
-                                                            </a>
 
 
 
@@ -2257,9 +2151,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1579 li_3 _odd _2nd">
+                                        <a href="#" id="top_k2wiz_GNB_1579"
+                                            class="top_k2wiz_GNB_1579 a_3 k2wiz_GNB_1560" target="_self">
 
+                                            편지쓰기
+                                            <input type="hidden" id="menuTitle_1579" value="편지쓰기">
+                                        </a>
 
 
 
@@ -2277,15 +2174,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1581 li_3 _last _even _3rd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1579"
-                                                                class="top_k2wiz_GNB_1579 a_3 k2wiz_GNB_1560"
-                                                                target="_self">
 
-                                                                편지쓰기
-                                                                <input type="hidden" id="menuTitle_1579" value="편지쓰기">
-                                                            </a>
 
 
 
@@ -2303,9 +2195,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1581 li_3 _last _even _3rd">
+                                        <a href="#" id="top_k2wiz_GNB_1581"
+                                            class="top_k2wiz_GNB_1581 a_3 k2wiz_GNB_1560" target="_self">
 
+                                            Q&amp;A
+                                            <input type="hidden" id="menuTitle_1581" value="Q&amp;A">
+                                        </a>
 
 
 
@@ -2324,16 +2219,13 @@
 
 
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1581"
-                                                                class="top_k2wiz_GNB_1581 a_3 k2wiz_GNB_1560"
-                                                                target="_self">
 
-                                                                Q&amp;A
-                                                                <input type="hidden" id="menuTitle_1581"
-                                                                    value="Q&amp;A">
-                                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </li>
+                        <li class="li_2_1561 li_2 _odd _useChildDiv">
 
 
 
@@ -2352,12 +2244,7 @@
 
 
 
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </li>
-                                            <li class="li_2_1561 li_2 _odd _useChildDiv">
 
 
 
@@ -2365,7 +2252,12 @@
 
 
 
+                            <a href="#" id="top_k2wiz_GNB_1561" class="top_k2wiz_GNB_1561 a_2 k2wiz_GNB_1546 plus"
+                                target="_self"><span>
 
+                                    특기병 2중대
+                                    <input type="hidden" id="menuTitle_1561" value="특기병 2중대">
+                                </span></a>
 
 
 
@@ -2384,16 +2276,12 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1561"
-                                                    class="top_k2wiz_GNB_1561 a_2 k2wiz_GNB_1546 plus"
-                                                    target="_self"><span>
 
-                                                        특기병 2중대
-                                                        <input type="hidden" id="menuTitle_1561" value="특기병 2중대">
-                                                    </span></a>
+                            <div class="top_div_1561 div_3 _childDiv">
+                                <ul class="top_k2wiz_GNB_ul_1561 _wizOdr ul_3">
 
 
+                                    <li class="li_3_1582 li_3 _1st _even">
 
 
 
@@ -2411,13 +2299,15 @@
 
 
 
-                                                <div class="top_div_1561 div_3 _childDiv">
-                                                    <ul class="top_k2wiz_GNB_ul_1561 _wizOdr ul_3">
 
 
-                                                        <li class="li_3_1582 li_3 _1st _even">
 
+                                        <a href="#" id="top_k2wiz_GNB_1582"
+                                            class="top_k2wiz_GNB_1582 a_3 k2wiz_GNB_1561" target="_self">
 
+                                            보고싶은 얼굴
+                                            <input type="hidden" id="menuTitle_1582" value="보고싶은 얼굴">
+                                        </a>
 
 
 
@@ -2435,16 +2325,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1583 li_3 _odd _2nd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1582"
-                                                                class="top_k2wiz_GNB_1582 a_3 k2wiz_GNB_1561"
-                                                                target="_self">
 
-                                                                보고싶은 얼굴
-                                                                <input type="hidden" id="menuTitle_1582"
-                                                                    value="보고싶은 얼굴">
-                                                            </a>
 
 
 
@@ -2462,9 +2346,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1583 li_3 _odd _2nd">
+                                        <a href="#" id="top_k2wiz_GNB_1583"
+                                            class="top_k2wiz_GNB_1583 a_3 k2wiz_GNB_1561" target="_self">
 
+                                            편지쓰기
+                                            <input type="hidden" id="menuTitle_1583" value="편지쓰기">
+                                        </a>
 
 
 
@@ -2482,15 +2369,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1585 li_3 _last _even _3rd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1583"
-                                                                class="top_k2wiz_GNB_1583 a_3 k2wiz_GNB_1561"
-                                                                target="_self">
 
-                                                                편지쓰기
-                                                                <input type="hidden" id="menuTitle_1583" value="편지쓰기">
-                                                            </a>
 
 
 
@@ -2508,9 +2390,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1585 li_3 _last _even _3rd">
+                                        <a href="#" id="top_k2wiz_GNB_1585"
+                                            class="top_k2wiz_GNB_1585 a_3 k2wiz_GNB_1561" target="_self">
 
+                                            Q&amp;A
+                                            <input type="hidden" id="menuTitle_1585" value="Q&amp;A">
+                                        </a>
 
 
 
@@ -2529,16 +2414,13 @@
 
 
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1585"
-                                                                class="top_k2wiz_GNB_1585 a_3 k2wiz_GNB_1561"
-                                                                target="_self">
 
-                                                                Q&amp;A
-                                                                <input type="hidden" id="menuTitle_1585"
-                                                                    value="Q&amp;A">
-                                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </li>
+                        <li class="li_2_1562 li_2 _last _even _useChildDiv">
 
 
 
@@ -2557,12 +2439,7 @@
 
 
 
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </li>
-                                            <li class="li_2_1562 li_2 _last _even _useChildDiv">
 
 
 
@@ -2570,7 +2447,12 @@
 
 
 
+                            <a href="#" id="top_k2wiz_GNB_1562" class="top_k2wiz_GNB_1562 a_2 k2wiz_GNB_1546 plus"
+                                target="_self"><span>
 
+                                    특기병3중대
+                                    <input type="hidden" id="menuTitle_1562" value="특기병3중대">
+                                </span></a>
 
 
 
@@ -2589,16 +2471,12 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1562"
-                                                    class="top_k2wiz_GNB_1562 a_2 k2wiz_GNB_1546 plus"
-                                                    target="_self"><span>
 
-                                                        특기병3중대
-                                                        <input type="hidden" id="menuTitle_1562" value="특기병3중대">
-                                                    </span></a>
+                            <div class="top_div_1562 div_3 _childDiv">
+                                <ul class="top_k2wiz_GNB_ul_1562 _wizOdr ul_3">
 
 
+                                    <li class="li_3_1586 li_3 _1st _even">
 
 
 
@@ -2616,13 +2494,15 @@
 
 
 
-                                                <div class="top_div_1562 div_3 _childDiv">
-                                                    <ul class="top_k2wiz_GNB_ul_1562 _wizOdr ul_3">
 
 
-                                                        <li class="li_3_1586 li_3 _1st _even">
 
+                                        <a href="#" id="top_k2wiz_GNB_1586"
+                                            class="top_k2wiz_GNB_1586 a_3 k2wiz_GNB_1562" target="_self">
 
+                                            보고싶은 얼굴
+                                            <input type="hidden" id="menuTitle_1586" value="보고싶은 얼굴">
+                                        </a>
 
 
 
@@ -2640,16 +2520,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1587 li_3 _odd _2nd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1586"
-                                                                class="top_k2wiz_GNB_1586 a_3 k2wiz_GNB_1562"
-                                                                target="_self">
 
-                                                                보고싶은 얼굴
-                                                                <input type="hidden" id="menuTitle_1586"
-                                                                    value="보고싶은 얼굴">
-                                                            </a>
 
 
 
@@ -2667,9 +2541,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1587 li_3 _odd _2nd">
+                                        <a href="#" id="top_k2wiz_GNB_1587"
+                                            class="top_k2wiz_GNB_1587 a_3 k2wiz_GNB_1562" target="_self">
 
+                                            편지쓰기
+                                            <input type="hidden" id="menuTitle_1587" value="편지쓰기">
+                                        </a>
 
 
 
@@ -2687,15 +2564,10 @@
 
 
 
+                                    </li>
+                                    <li class="li_3_1589 li_3 _last _even _3rd">
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1587"
-                                                                class="top_k2wiz_GNB_1587 a_3 k2wiz_GNB_1562"
-                                                                target="_self">
 
-                                                                편지쓰기
-                                                                <input type="hidden" id="menuTitle_1587" value="편지쓰기">
-                                                            </a>
 
 
 
@@ -2713,9 +2585,12 @@
 
 
 
-                                                        </li>
-                                                        <li class="li_3_1589 li_3 _last _even _3rd">
+                                        <a href="#" id="top_k2wiz_GNB_1589"
+                                            class="top_k2wiz_GNB_1589 a_3 k2wiz_GNB_1562" target="_self">
 
+                                            Q&amp;A
+                                            <input type="hidden" id="menuTitle_1589" value="Q&amp;A">
+                                        </a>
 
 
 
@@ -2734,17 +2609,18 @@
 
 
 
-                                                            <a href="#"
-                                                                id="top_k2wiz_GNB_1589"
-                                                                class="top_k2wiz_GNB_1589 a_3 k2wiz_GNB_1562"
-                                                                target="_self">
 
-                                                                Q&amp;A
-                                                                <input type="hidden" id="menuTitle_1589"
-                                                                    value="Q&amp;A">
-                                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </li>
+                    </ul>
+                    <span class="navGab"></span>
+                </div>
 
+            </li>
+            <li class="li_1_1547 li_1 _even eQ05 _useChildDiv">
 
 
 
@@ -2762,17 +2638,8 @@
 
 
 
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </li>
-                                        </ul>
-                                        <span class="navGab"></span>
-                                    </div>
 
-                                </li>
-                                <li class="li_1_1547 li_1 _even eQ05 _useChildDiv">
 
 
 
@@ -2780,14 +2647,21 @@
 
 
 
+                <a href="#" id="top_k2wiz_GNB_1547" class="top_k2wiz_GNB_1547 a_1 k2wiz_GNB_818" target="_self"><span>
 
+                        모집안내
+                        <input type="hidden" id="menuTitle_1547" value="모집안내">
+                    </span></a>
 
 
 
 
 
+                <div class="top_div_1547 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1547 _wizOdr ul_2" style="height: 230px;">
 
 
+                        <li class="li_2_1563 li_2 _1st _even">
 
 
 
@@ -2799,25 +2673,21 @@
 
 
 
-                                    <a href="#"
-                                        id="top_k2wiz_GNB_1547" class="top_k2wiz_GNB_1547 a_1 k2wiz_GNB_818"
-                                        target="_self"><span>
 
-                                            모집안내
-                                            <input type="hidden" id="menuTitle_1547" value="모집안내">
-                                        </span></a>
 
 
 
 
 
-                                    <div class="top_div_1547 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1547 _wizOdr ul_2" style="height: 230px;">
 
 
-                                            <li class="li_2_1563 li_2 _1st _even">
 
+                            <a href="#" id="top_k2wiz_GNB_1563" class="top_k2wiz_GNB_1563 a_2 k2wiz_GNB_1547"
+                                target="_self"><span>
 
+                                    장교
+                                    <input type="hidden" id="menuTitle_1563" value="장교">
+                                </span></a>
 
 
 
@@ -2835,14 +2705,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1564 li_2 _odd _2nd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1563"
-                                                    class="top_k2wiz_GNB_1563 a_2 k2wiz_GNB_1547" target="_self"><span>
 
-                                                        장교
-                                                        <input type="hidden" id="menuTitle_1563" value="장교">
-                                                    </span></a>
 
 
 
@@ -2860,9 +2726,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1564 li_2 _odd _2nd">
+                            <a href="#" id="top_k2wiz_GNB_1564" class="top_k2wiz_GNB_1564 a_2 k2wiz_GNB_1547"
+                                target="_self"><span>
 
+                                    부사관
+                                    <input type="hidden" id="menuTitle_1564" value="부사관">
+                                </span></a>
 
 
 
@@ -2880,14 +2749,10 @@
 
 
 
+                        </li>
+                        <li class="li_2_1565 li_2 _last _even _3rd">
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1564"
-                                                    class="top_k2wiz_GNB_1564 a_2 k2wiz_GNB_1547" target="_self"><span>
 
-                                                        부사관
-                                                        <input type="hidden" id="menuTitle_1564" value="부사관">
-                                                    </span></a>
 
 
 
@@ -2905,9 +2770,12 @@
 
 
 
-                                            </li>
-                                            <li class="li_2_1565 li_2 _last _even _3rd">
+                            <a href="#" id="top_k2wiz_GNB_1565" class="top_k2wiz_GNB_1565 a_2 k2wiz_GNB_1547"
+                                target="_self"><span>
 
+                                    특기병
+                                    <input type="hidden" id="menuTitle_1565" value="특기병">
+                                </span></a>
 
 
 
@@ -2926,14 +2794,14 @@
 
 
 
-                                                <a href="#"
-                                                    id="top_k2wiz_GNB_1565"
-                                                    class="top_k2wiz_GNB_1565 a_2 k2wiz_GNB_1547" target="_self"><span>
 
-                                                        특기병
-                                                        <input type="hidden" id="menuTitle_1565" value="특기병">
-                                                    </span></a>
+                        </li>
+                    </ul>
+                    <span class="navGab"></span>
+                </div>
 
+            </li>
+            <!-- <li class="li_1_1548 li_1 _last _odd eQ06 _useChildDiv">
 
 
 
@@ -2952,289 +2820,269 @@
 
 
 
-                                            </li>
-                                        </ul>
-                                        <span class="navGab"></span>
-                                    </div>
 
-                                </li>
-                                <li class="li_1_1548 li_1 _last _odd eQ06 _useChildDiv">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                    <a href="#" id="top_k2wiz_GNB_1548" class="top_k2wiz_GNB_1548 a_1 k2wiz_GNB_818" target="_self"><span>
-                                
-                                            정보마당
-                                            <input type="hidden" id="menuTitle_1548" value="정보마당">
-                                        </span></a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                    <div class="top_div_1548 div_2 _childDiv">
-                                        <ul class="top_k2wiz_GNB_ul_1548 _wizOdr ul_2" style="height: 230px;">
-                                
-                                
-                                            <li class="li_2_3452 li_2 _1st _even">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                                <a href="#" id="top_k2wiz_GNB_3452" class="top_k2wiz_GNB_3452 a_2 k2wiz_GNB_1548" target="_self"><span>
-                                
-                                                        질의응답
-                                                        <input type="hidden" id="menuTitle_3452" value="질의응답">
-                                                    </span></a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                            </li>
-                                            <li class="li_2_1567 li_2 _odd _2nd">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                                <a href="#" id="top_k2wiz_GNB_1567" class="top_k2wiz_GNB_1567 a_2 k2wiz_GNB_1548" target="_self"><span>
-                                
-                                                        가볼만한 곳
-                                                        <input type="hidden" id="menuTitle_1567" value="가볼만한 곳">
-                                                    </span></a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                            </li>
-                                            <li class="li_2_1568 li_2 _even _3rd">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                                <a href="#" id="top_k2wiz_GNB_1568" class="top_k2wiz_GNB_1568 a_2 k2wiz_GNB_1548" target="_self"><span>
-                                
-                                                        관련사이트
-                                                        <input type="hidden" id="menuTitle_1568" value="관련사이트">
-                                                    </span></a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                            </li>
-                                            <li class="li_2_1569 li_2 _last _odd">
-                                
-                                
-                                
-                                
-                                
-                                
-                                                <a href="#" id="top_k2wiz_GNB_1569" class="top_k2wiz_GNB_1569 a_2 k2wiz_GNB_1548" target="_self"><span>
-                                
-                                                        사이트맵
-                                                        <input type="hidden" id="menuTitle_1569" value="사이트맵">
-                                                    </span></a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                            </li>
-                                        </ul>
-                                        <!-- <span class="navGab">로그인</span> -->
-                                    </div>
-                                
-                                
-                                
-                                
-                                
-                                </li>
-                                <li class="li_1_1546 li_1 _odd eQ04 _useChildDiv">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                    <a href="/admin" id="top_k2wiz_GNB_1548" class="top_k2wiz_GNB_1548 a_1 k2wiz_GNB_818" target="_self">
-                                        <span style="color:#E66221;">
-                                            관리자메뉴
-                                            <input type="hidden" id="menuTitle_1548" value="정보마당">
-                                        </span>
-                                    </a>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                </li>
-                            </ul>
-                        </div>
 
-                    </nav>
+
+
+
+
+
+
+                <a href="#" id="top_k2wiz_GNB_1548" class="top_k2wiz_GNB_1548 a_1 k2wiz_GNB_818" target="_self"><span>
+
+                        정보마당
+                        <input type="hidden" id="menuTitle_1548" value="정보마당">
+                    </span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="top_div_1548 div_2 _childDiv">
+                    <ul class="top_k2wiz_GNB_ul_1548 _wizOdr ul_2" style="height: 230px;">
+
+
+                        <li class="li_2_3452 li_2 _1st _even">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="#" id="top_k2wiz_GNB_3452" class="top_k2wiz_GNB_3452 a_2 k2wiz_GNB_1548"
+                                target="_self"><span>
+
+                                    질의응답
+                                    <input type="hidden" id="menuTitle_3452" value="질의응답">
+                                </span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </li>
+                        <li class="li_2_1567 li_2 _odd _2nd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="#" id="top_k2wiz_GNB_1567" class="top_k2wiz_GNB_1567 a_2 k2wiz_GNB_1548"
+                                target="_self"><span>
+
+                                    가볼만한 곳
+                                    <input type="hidden" id="menuTitle_1567" value="가볼만한 곳">
+                                </span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </li>
+                        <li class="li_2_1568 li_2 _even _3rd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="#" id="top_k2wiz_GNB_1568" class="top_k2wiz_GNB_1568 a_2 k2wiz_GNB_1548"
+                                target="_self"><span>
+
+                                    관련사이트
+                                    <input type="hidden" id="menuTitle_1568" value="관련사이트">
+                                </span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </li>
+                        <li class="li_2_1569 li_2 _last _odd">
+
+
+
+
+
+
+                            <a href="#" id="top_k2wiz_GNB_1569" class="top_k2wiz_GNB_1569 a_2 k2wiz_GNB_1548"
+                                target="_self"><span>
+
+                                    사이트맵
+                                    <input type="hidden" id="menuTitle_1569" value="사이트맵">
+                                </span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </li> -->
+            <li class="li_1_1546 li_1 _odd eQ04 _useChildDiv">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="/admin" id="top_k2wiz_GNB_1548" class="top_k2wiz_GNB_1548 a_1 k2wiz_GNB_818" target="_self">
+                    <span style="color:#E66221;">
+                        관리자메뉴
+                        <input type="hidden" id="menuTitle_1548" value="정보마당">
+                    </span>
+                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+
 
                     <script>
                         $(document).ready(function () {
@@ -3247,7 +3095,7 @@
                     </div>
                 </div>
                 <div id="sitemap">
-                    <a href="/logout">로그아웃</a>
+                    <a href="/login">로그인</a>
                 </div>
                 <div id="m-gnb">
                     <button id="mMenuOpen" class="m-gnb-btn open on">메뉴열기</button>
@@ -3358,7 +3206,7 @@
 
 
 
-                        <script src="./public/visitLog.js"></script>
+                        <!-- <script src="./public/visitLog.js"></script> -->
                         <script>
                             /*================================================
                             contents screen height getting
@@ -3465,7 +3313,7 @@
                                                 정예정보통신 장병 육성의 요람
                                             </div>
                                             <div class="logo">
-                                                <span> <img src="./public/logo-slogan.png" alt="육군정보통신학교">
+                                                <span> <img src="{{ url_for('static',filename='logo-slogan.png')}}" alt="육군정보통신학교">
                                                 </span>
                                             </div>
                                         </div>
@@ -3600,7 +3448,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 912px; transform: translate3d(0px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1568610542883100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1568610542883100.png); width: 152px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="0" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide00">
@@ -3626,7 +3474,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1574221738559100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1574221738559100.png); width: 152px;"
                                                                 class="slick-slide slick-active" data-slick-index="1"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide01">
@@ -3652,7 +3500,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568610559579100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1568610559579100.png); width: 152px;"
                                                                 class="slick-slide slick-active" data-slick-index="2"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide02">
@@ -3678,7 +3526,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1574221755189100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1574221755189100.png); width: 152px;"
                                                                 class="slick-slide slick-active" data-slick-index="3"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide03">
@@ -3704,7 +3552,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568610575135100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1568610575135100.png); width: 152px;"
                                                                 class="slick-slide slick-active" data-slick-index="4"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide04">
@@ -3730,7 +3578,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568610645191100.png&quot;); width: 152px;"
+                                                            <li style="background-image: url(/static/temp_1568610645191100.png); width: 152px;"
                                                                 class="slick-slide slick-active" data-slick-index="5"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide05">
@@ -3955,7 +3803,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 461px; transform: translate3d(0px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1568614041284100.jpg&quot;); width: 461px;"
+                                                            <li style="background-image: url(/static/temp_1568614041284100.jpg); width: 461px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="0" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide20">
@@ -4122,7 +3970,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 376px; transform: translate3d(0px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1568615881133100.png&quot;); width: 376px;"
+                                                            <li style="background-image: url(/static/temp_1568615881133100.png); width: 376px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="0" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide40">
@@ -4302,7 +4150,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 504px; transform: translate3d(0px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1568680843433100.png&quot;); width: 168px;"
+                                                            <li style="background-image: url(/static/temp_1568680843433100.png); width: 168px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="0" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide60">
@@ -4328,7 +4176,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568680887269100.png&quot;); width: 168px;"
+                                                            <li style="background-image: url(/static/temp_1568680887269100.png); width: 168px;"
                                                                 class="slick-slide slick-active" data-slick-index="1"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide61">
@@ -4354,7 +4202,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568682077142100.png&quot;); width: 168px;"
+                                                            <li style="background-image: url(/static/temp_1568682077142100.png); width: 168px;"
                                                                 class="slick-slide slick-active" data-slick-index="2"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide62">
@@ -4538,7 +4386,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 351px; transform: translate3d(0px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1568684239186100.png&quot;); width: 117px;"
+                                                            <li style="background-image: url(/static/temp_1568684239186100.png); width: 117px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="0" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide80">
@@ -4565,7 +4413,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568684276900100.png&quot;); width: 117px;"
+                                                            <li style="background-image: url(/static/temp_1568684276900100.png); width: 117px;"
                                                                 class="slick-slide slick-active" data-slick-index="1"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide81">
@@ -4591,7 +4439,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1568684308379100.png&quot;); width: 117px;"
+                                                            <li style="background-image: url(/static/temp_1568684308379100.png); width: 117px;"
                                                                 class="slick-slide slick-active" data-slick-index="2"
                                                                 aria-hidden="false" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide82">
@@ -4788,7 +4636,7 @@
                                                         <div class="slick-track"
                                                             style="opacity: 1; width: 3192px; transform: translate3d(-1064px, 0px, 0px);"
                                                             role="listbox">
-                                                            <li style="background-image: url(&quot;/public/temp_1573711156954100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711156954100.jpg); width: 532px;"
                                                                 class="slick-slide slick-cloned" data-slick-index="-1"
                                                                 aria-hidden="true" tabindex="-1">
 
@@ -4813,7 +4661,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1573711015430100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711015430100.jpg); width: 532px;"
                                                                 class="slick-slide" data-slick-index="0"
                                                                 aria-hidden="true" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide100">
@@ -4840,7 +4688,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1573711076638100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711076638100.jpg); width: 532px;"
                                                                 class="slick-slide slick-current slick-active"
                                                                 data-slick-index="1" aria-hidden="false" tabindex="-1"
                                                                 role="option" aria-describedby="slick-slide101">
@@ -4867,7 +4715,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1573711134656100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711134656100.jpg); width: 532px;"
                                                                 class="slick-slide" data-slick-index="2"
                                                                 aria-hidden="true" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide102">
@@ -4893,7 +4741,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1573711156954100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711156954100.jpg); width: 532px;"
                                                                 class="slick-slide" data-slick-index="3"
                                                                 aria-hidden="true" tabindex="-1" role="option"
                                                                 aria-describedby="slick-slide103">
@@ -4919,7 +4767,7 @@
 
 
                                                             </li>
-                                                            <li style="background-image: url(&quot;/public/temp_1573711015430100.jpg&quot;); width: 532px;"
+                                                            <li style="background-image: url(/static/temp_1573711015430100.jpg); width: 532px;"
                                                                 class="slick-slide slick-cloned" data-slick-index="4"
                                                                 aria-hidden="true" tabindex="-1">
 
@@ -7063,7 +6911,7 @@
                                                             <a href="#"
                                                                 class="recentBbsAnchor">
                                                                 <div class="recentThumb"
-                                                                    style="background-image:url(&#39;/public/thumb_temp_1568706400110100.jpg&#39;)">
+                                                                    style="background-image:url(/static/thumb_temp_1568706400110100.jpg)">
 
                                                                 </div>
                                                                 <div class="recentBbsInfo">
@@ -7307,7 +7155,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1573711423343100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711423343100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     한국국방연구원
 
@@ -7358,7 +7206,7 @@
 
                                                                 <a href="#"
                                                                     class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1573711449641100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711449641100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     육군모집
 
@@ -7383,7 +7231,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1573711528481100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711528481100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     육군훈련소
 
@@ -7408,7 +7256,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1568697950461100.jpg)"
+                                                                    style="background-image:url(/static/temp_1568697950461100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     대한민국 육군협회
 
@@ -7435,7 +7283,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1568693858882100.jpg)"
+                                                                    style="background-image:url(/static/temp_1568693858882100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="0">
                                                                     대한민국 국방부
 
@@ -7461,7 +7309,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1573711423343100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711423343100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="0">
                                                                     한국국방연구원
 
@@ -7487,7 +7335,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1568697856867101.jpg)"
+                                                                    style="background-image:url(/static/temp_1568697856867101.jpg)"
                                                                     target="_blank" title="새 창" tabindex="0">
                                                                     대한민국 육군
 
@@ -7514,7 +7362,7 @@
 
                                                                 <a href="#"
                                                                     class="btns"
-                                                                    style="background-image:url(/public/temp_1573711449641100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711449641100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="0">
                                                                     육군모집
 
@@ -7540,7 +7388,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1573711528481100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711528481100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="0">
                                                                     육군훈련소
 
@@ -7566,7 +7414,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1568697950461100.jpg)"
+                                                                    style="background-image:url(/static/temp_1568697950461100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     대한민국 육군협회
 
@@ -7591,7 +7439,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1568693858882100.jpg)"
+                                                                    style="background-image:url(/static/temp_1568693858882100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     대한민국 국방부
 
@@ -7616,7 +7464,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/public/temp_1573711423343100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711423343100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     한국국방연구원
 
@@ -7641,7 +7489,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1568697856867101.jpg)"
+                                                                    style="background-image:url(/static/temp_1568697856867101.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     대한민국 육군
 
@@ -7667,7 +7515,7 @@
 
                                                                 <a href="#"
                                                                     class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1573711449641100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711449641100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     육군모집
 
@@ -7692,7 +7540,7 @@
 
 
                                                                 <a href="#" class="btns"
-                                                                    style="background-image:url(/sites/signal/atchmnfl_mngr/imageSlide/154/temp_1573711528481100.jpg)"
+                                                                    style="background-image:url(/static/temp_1573711528481100.jpg)"
                                                                     target="_blank" title="새 창" tabindex="-1">
                                                                     육군훈련소
 
@@ -7924,11 +7772,11 @@
     </div>
 
     <!-- Slider -->
-    <script src="./public/slick.min.js"></script>
+    <script src="{{ url_for('static',filename='slick.min.js' ) }}"></script>
     <!-- Table Scroll -->
-    <script src="./public/niceScroll.min.js"></script>
+    <script src="{{ url_for('static',filename='niceScroll.min.js' ) }}"></script>
     <!-- Custom -->
-    <script src="./public/main.js"></script>
+    <script src="{{ url_for('static',filename='main.js' ) }}"></script>
     <!-- <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
         style="width: 13px; z-index: 99999999; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: block; opacity: 0.2;">
         <div class="nicescroll-cursors"
@@ -7960,7 +7808,7 @@
 
 
 
-    <link rel="stylesheet" href="./public/popup_total.css">
+    <!-- <link rel="stylesheet" href="./public/popup_total.css"> -->
     <script>
         $(document).ready(function () {
             $(".PZwindow").parent("._obj").css("overflow", "visible");
@@ -8056,7 +7904,7 @@
         }
     </script>
 
-    <link rel="stylesheet" type="text/css" href="./public/popup_common.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./public/popup_common.css"> -->
 
 
 

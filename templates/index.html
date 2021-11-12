@@ -59,7 +59,7 @@
 
 
 
-    <script src="{{ url_for('static',filename='common.js(1).다운로드') }}"></script>
+    <script src="{{ url_for('static',filename='common.js(1)') }}"></script>
     <script src="{{ url_for('static',filename='site_user.js') }}"></script>
 
     <link rel="stylesheet" href="{{ url_for('static',filename='blockUI.css') }}">
@@ -88,14 +88,14 @@
 
 
 
-    <link rel="stylesheet" href="./public/responsive.css">
+    <!-- <link rel="stylesheet" href="./public/responsive.css"> -->
 
 
     <!-- PC + TABLET + MOBILE -->
     <!-- <link media="only screen and (max-width: 480px)" href="./public/responsiveMobile.css" rel="stylesheet">
     <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/responsiveTablet.css"
         rel="stylesheet"> -->
-    <link media="only screen and (min-width: 861px)" href="./public/responsiveDesktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/responsiveDesktop.css" rel="stylesheet"> -->
 
 
 
@@ -105,14 +105,13 @@
 
 
 
-    <link href="./public/master.css" rel="stylesheet">
+    <!-- <link href="./public/master.css" rel="stylesheet"> -->
 
 
     <!-- PC + TABLET + MOBILE -->
-    <link media="only screen and (max-width: 480px)" href="./public/master_mobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/master_tablet.css"
-        rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/master_desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/master_mobile.css" rel="stylesheet"> -->
+    <!-- <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/master_tablet.css" -->
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/master_desktop.css" rel="stylesheet"> -->
 
 
 
@@ -141,10 +140,9 @@
 
 
     <!-- PC + TABLET + MOBILE -->
-    <link media="only screen and (max-width: 480px)" href="./public/fnctMobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/fnctTablet.css"
-        rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/fnctDesktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/fnctMobile.css" rel="stylesheet"> -->
+    <!-- <link media="only screen and (min-width: 481px) and (max-width: 860px)" href="./public/fnctTablet.css" -->
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/fnctDesktop.css" rel="stylesheet"> -->
 
 
 
@@ -160,7 +158,7 @@
             var isTablet = true;
             var $w7viewPort = $("#resResponsiveViewport");
             width = parseInt(width);
-            console.log(width);
+            // console.log(width);
             if (isMobile && (width < 480)) {/*mobile*/
                 $("._responsiveObj").removeClass("ds");
                 $("._responsiveObj").addClass("ta");
@@ -214,7 +212,7 @@
     <!-- [M/S RESOURCE] -->
 
 
-    <link rel="stylesheet" href="./public/popup_total.css">
+    <!-- <link rel="stylesheet" href="./public/popup_total.css"> -->
     <script>
         $(document).ready(function () {
             $(".PZwindow").parent("._obj").css("overflow", "visible");
@@ -665,7 +663,7 @@
 
 
 
-    <link href="./public/style(11).css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='style(11).css')}}" rel="stylesheet">
 
 
 
@@ -673,7 +671,7 @@
     <!-- <link media="only screen and (max-width: 480px)" href="./public/style_common_Mobile.css" rel="stylesheet">
     <link media="only screen and (min-width: 481px) and (max-width: 860px)"
         href="./public/style_common_Tablet.css" rel="stylesheet"> -->
-    <link media="only screen and (min-width: 861px)" href="./public/style_common_Desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (min-width: 861px)" href="./public/style_common_Desktop.css" rel="stylesheet"> -->
 
 
 
@@ -686,10 +684,8 @@
 
 
     <!-- PC + TABLET + MOBILE @@-->
-    <link media="only screen and (max-width: 480px)" href="./public/style_main_Mobile.css" rel="stylesheet">
-    <link media="only screen and (min-width: 481px) and (max-width: 860px)"
-        href="./public/style_main_Tablet.css" rel="stylesheet">
-    <link media="only screen and (min-width: 861px)" href="./public/style_main_Desktop.css" rel="stylesheet">
+    <!-- <link media="only screen and (max-width: 480px)" href="./public/style_main_Mobile.css" rel="stylesheet">
+    <link media="only screen and (min-width: 861px)" href="./public/style_main_Desktop.css" rel="stylesheet"> -->
 
 
 
@@ -698,11 +694,11 @@
 
 
 
-    <script src="./public/script.js"></script>
+    <!-- <script src="./public/script.js"></script> -->
 
 
 
-    <script src="./public/script.js(1).다운로드"></script>
+    <!-- <script src="./public/script.js(1).다운로드"></script> -->
 
 
 
@@ -745,16 +741,6 @@
 </head>
 
 <body class="main _responsiveObj main ds">
-
-    <!-- Login Script After 
-	<style>#hideAll {position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: white;z-index: 10000;}</style>
-	<div style="display: none" id="hideAll"> </div>
-	<script type="text/javascript">
-	  document.getElementById("hideAll").style.display = "block";
-	  $(window).load(function() { setTimeout(function(){document.getElementById("hideAll").style.display = "none";},50);});
-	</script> 
-	-->
-
     <!-- Skip -->
     <div class="_hidden">
         <a href="#" class="skip skip-gnb">메뉴 바로가기</a>
@@ -3295,7 +3281,7 @@
 
 
 
-                        <script src="./public/visitLog.js"></script>
+                        <!-- <script src="./public/visitLog.js"></script> -->
                         <script>
                             /*================================================
                             contents screen height getting
@@ -7897,7 +7883,7 @@
 
 
 
-    <link rel="stylesheet" href="./public/popup_total.css">
+    <!-- <link rel="stylesheet" href="./public/popup_total.css"> -->
     <script>
         $(document).ready(function () {
             $(".PZwindow").parent("._obj").css("overflow", "visible");
@@ -7993,7 +7979,7 @@
         }
     </script>
 
-    <link rel="stylesheet" type="text/css" href="./public/popup_common.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./public/popup_common.css"> -->
 
 
 
